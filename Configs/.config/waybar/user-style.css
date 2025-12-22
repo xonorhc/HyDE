@@ -1,1 +1,5 @@
 /* User custom styles */
+* {
+  font-size: 12px;
+}
+@define-color bar-bg alpha(@main-bg, 2);
