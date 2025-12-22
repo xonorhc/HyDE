@@ -38,6 +38,36 @@
 #  This is your file 
 # Add your configurations here
 # export EDITOR=nvim
-export EDITOR=code
+# export EDITOR=code
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # unset -f command_not_found_handler # Uncomment to prevent searching for commands not found in package manager
+
+# Helpful aliases
+alias ff='fastfetch'
+alias v='$EDITOR'
+alias wifi='nmtui'
+
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
+# Postgres
+export PGHOST='127.0.0.1'
+export PGPORT='5432'
+export PGDATABASE='postgres'
+export PGUSER='postgres'
+export PGPASSFILE=~/.pgpass
+export DATABASE_URL="postgres://$PGUSER:@$PGHOST:$PGPORT/$PGDATABASE"
+export PSQL_PAGER="pspg"
