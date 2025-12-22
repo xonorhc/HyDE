@@ -1,0 +1,16 @@
+[mgr]
+border_symbol = " "
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[mode]
+normal_alt  = { bg = "#45464f", fg = "#c6c5d0" }
+select_alt  = { bg = "#45464f", fg = "#c6c5d0" }
+unset_alt  = { bg = "#45464f", fg = "#c6c5d0" }
+
+[tabs]
+inactive  = { bg = "#45464f", fg = "#c5c6d0" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }

@@ -1,0 +1,32 @@
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "d896656"
+hash = "62251f94eb67648d42cdfcfb8be0fad2"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "a90fc71"
+hash = "894e801b788d0fca94627b58f8c9e1d4"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "19dc890"
+hash = "27ca02f49fd236b5cc7bf03c243859fe"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "19dc890"
+hash = "4fccaaf10c36dc2466e2438a386ff017"
+
+[[plugin.deps]]
+use = "Ape/open-with-cmd"
+rev = "433cf30"
+hash = "86e0312b01bc5762813c6c1d0517f073"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "c264639"
+hash = "e17c11b605d989568a1d1741ca17c584"
+
+[flavor]
+deps = []
