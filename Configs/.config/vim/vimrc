@@ -2,11 +2,51 @@
 let s:VIM_DIR = fnamemodify($MYVIMRC, ':h')
 execute 'source ' . s:VIM_DIR . '/hyde.vim'
 
-" Adding your custom colorschem
-"colorscheme zaibatsu "the only nice built-in colorscheme 
+set number
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set nobackup
+set scrolloff=10
+set mouse=a
+set nowrap
+set incsearch
+set ignorecase
+set smartcase
+set showcmd
+set showmode
+set showmatch
+set hlsearch
+set history=1000
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set t_Co=256
+set ttyfast
+set clipboard=unnamedplus
 
-" remaps
-"inoremap <C-c> <Esc>
-"nnoremap <leader>ff :w<CR>
-"nnoremap ; :
-"vnoremap ; :
+" MAPPINGS ---------------------------------------------------------------
+
+let mapleader = " "
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+inoremap jj <Esc>
+nnoremap ; :
+vnoremap ; :
+nnoremap n nzz
+nnoremap N Nzz
+
+" Map the F5 key to run a Python script inside Vim.
+nnoremap <leader>rp :w <CR>:!clear <CR>:!python3 % <CR>
+
+" Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
