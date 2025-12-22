@@ -1,0 +1,5 @@
+# [Created by task 3.3.0 3/3/2025 00:24:06]
+data.location=~/.task
+
+# Color theme (uncomment one to use)
+include no-color.theme
