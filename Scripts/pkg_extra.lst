@@ -8,9 +8,15 @@ python-requests|wttrbar                                # script dependency
 ddcui                                                  # GUI to control brightness for external monitors
 # hyprgui-bin                                          # GUI for hyprland configuration // might mess your userprefs but convenient // Just disappeared
 # power-profiles-daemon                                # for managing power profiles from waybar
+ufw                                                    # Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 
 # --------------------------------------------------- // Shell
-
+zoxide                                                 # A smarter cd command for your terminal
+yazi                                                   # Blazing fast terminal file manager written in Rust, based on async I/O
+lazygit                                                # Simple terminal UI for git commands
+lazydocker                                             # A simple terminal UI for docker and docker-compose, written in Go with the gocui library.
+lazysql                                                # A cross-platform TUI database management tool written in Go
+peaclock                                               # A colourful binary clock for the terminal
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -31,13 +37,10 @@ cava                                                   # audio visualizer
 # spicetify-cli                                        # cli to customize spotify client
 
 # --------------------------------------------------- // Apps
-neovim                                                 # vim based text editor
-yazi                                                   # Blazing fast terminal file manager written in Rust, based on async I/O
 jrnl                                                   # Collect your thoughts and notes without leaving the command line
 nb                                                     # A command-line note-taking, bookmarking, archiving, and knowledge base application
 task                                                   # Taskwarrior, a command-line todo list manager
 pspg                                                   # Tabular data pager designed to be used with psql
-peaclock                                               # A colourful binary clock for the terminal
 zathura                                                # Minimalistic document viewer
 zathura-cb
 zathura-djvu
@@ -59,6 +62,7 @@ eza|fish                                                 # file lister
 duf|fish                                                 # prettier version of df
 
 # --------------------------------------------------- // Editor
+neovim                                                 # vim based text editor
 # vscodium                                             # Full oss text editor
 # vscodium-marketplace|vscodium                        # VSCodium marketplace
 # code-marketplace|code                                # Code-Oss marketplace
