@@ -1,0 +1,61 @@
+${XDG_CONFIG_HOME:-$HOME/.config}/nvim/lua/plugins/generated.lua
+-- Name:         wallbash
+-- Description:  wallbash template
+-- Author:       AnachronoX
+-- License:      Same as NeoVim
+-- Last Change:  December 2025
+
+return {
+  "y3owk1n/base16-pro-max.nvim",
+  lazy = true,
+  config = function()
+    require("base16-pro-max").setup {
+      -- Base16 colors (required)
+      colors = {
+				base00 = "#<wallbash_pry1>", -- Default background
+				base01 = "#<wallbash_1xa3>", -- Lighter background (status bars)
+				base02 = "#<wallbash_2xa3>", -- Selection background
+				base03 = "#<wallbash_3xa2>", -- Dark foreground (status bars)
+				base04 = "#<wallbash_4xa4>", -- Comments, line highlighting
+				base05 = "#<wallbash_txt1>", -- Default foreground
+				base06 = "#<wallbash_txt2>", -- Light foreground
+				base07 = "#<wallbash_txt3>", -- Lightest foreground
+
+				base08 = "#<wallbash_1xa6>", -- Red (variables, errors)
+				base09 = "#<wallbash_1xa8>", -- Orange (integers, constants)
+				base0A = "#<wallbash_2xa6>", -- Yellow (classes, search)
+				base0B = "#<wallbash_2xa8>", -- Green (strings, success)
+				base0C = "#<wallbash_3xa6>", -- Cyan (support, regex)
+				base0D = "#<wallbash_3xa8>", -- Blue (functions, info)
+				base0E = "#<wallbash_4xa6>", -- Purple (keywords, changes)
+				base0F = "#<wallbash_4xa8>", -- Brown (deprecated)
+      },
+
+      -- Style options
+      styles = {
+        italic = true, -- Enable italic text
+        bold = true, -- Enable bold text
+        transparency = true, -- Transparent background
+        use_cterm = false, -- Use cterm colors
+        dim_inactive_windows = false, -- Dim inactive windows
+        blends = {
+          subtle = 10, -- Barely visible (10%)
+          medium = 15, -- Noticeable (15%)
+          strong = 25, -- Prominent (25%)
+          super = 50, -- Very prominent (50%)
+        },
+      },
+
+      -- Plugin integrations
+      plugins = {
+        enable_all = true, -- Enable all supported plugins
+      },
+
+      -- Setup vim.g globals
+      setup_globals = {
+        terminal_colors = false, -- Set terminal colors (`vim.g.terminal_color_*`)
+        base16_gui_colors = false, -- Set base16 gui colors (`vim.g.base16_gui*`)
+      },
+    }
+  end,
+}
